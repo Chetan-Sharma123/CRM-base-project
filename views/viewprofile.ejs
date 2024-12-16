@@ -1,0 +1,75 @@
+<%-include('../particals/head.ejs')%>
+<section id="profile">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="card" style="width: 22rem;">
+                    <img class="card-img-top" src="../uploads/<%=data.img%>" alt="Card image cap">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <h6>Account Status</h6>
+                        </div>
+                        <div class="col">
+                          <h6><%=data.status%></h6>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <h6>First Name</h6>
+                        </div>
+                        <div class="col">
+                          <h6><%=data.firstname%></h6>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <h6>Last Name</h6>
+                        </div>
+                        <div class="col">
+                          <h6><%=data.lastname%></h6>
+                        </div>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="col">
+                          <h6>Gender</h6>
+                        </div>
+                        <div class="col">
+                          <h6><%=data.gender%></h6>
+                        </div>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="col">
+                          <h6>Email</h6>
+                        </div>
+                        <div class="col">
+                          <h6><%=data.email%></h6>
+                        </div>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="col">
+                          <h6>Dob</h6>
+                        </div>
+                        <div class="col">
+                          <h6><%=data.dob%></h6>
+                        </div>
+                      </div>
+                      
+                      <a href="/updateprofile/hh" class="btn btn-success mt-4 form-control">UPDATE PROFILE</a>
+                    </div>
+                  </div>
+                <div>
+    
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<%-include('../particals/head.ejs')%>
+<section id="blogheader">
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <h2 class="text-center">NEW BLOG ADD</h2>
+            <%if(message!=='mess'){%>
+                <div class="text-center">
+                    <h6 class="alert alert-success"><%=message%></h6>
+                </div>
+               <%}%>
+            <form action="" method="post">
+                <label for="">Blog Title</label><input type="text" name="title" id="" class="form-control">
+                <label for="">Descriptions</label><textarea name="desc" id="" class="form-control"></textarea>
+                <button type="submit" class="btn btn-success form-control mt-3">ADD BLOG</button>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+</section>
+
+</body>
+</html>

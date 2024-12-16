@@ -1,0 +1,88 @@
+body{
+    background-color: #f0f2f5;
+}
+
+
+
+h2{
+    color: green;
+}
+
+#loginform{
+    height: 550px;
+    display: flex;
+    align-items: center;
+    
+}
+
+#loginform h2{
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+}
+#loginform input{
+    padding: 12px;
+}
+#loginform button{
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#loginform a{
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
+    margin-right: 7px;
+    margin-top: 8px;
+    text-transform: lowercase;
+}
+
+#loginform #form{
+    
+    padding: 25px 12px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#forgetemailform{
+    height: 550px;
+    display: flex;
+    align-items: center;
+}
+
+
+#forgetemailform #form{
+    
+    padding: 25px 12px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#forgetemailform hr{
+    margin-top: 20px;
+}
+#forgetemailform p{
+    font-size: 18px;
+    font-weight: 600;
+}
+#forgetemailform input{
+    margin-top: 3px;
+    padding: 15px;
+}
+#forgetemailform button{
+    margin-top: 10px;
+    margin-right: 10px;
+    /* float: right; */
+    border: none;
+    
+    padding: 8px 25px;
+}
+
+#createaccountform{
+    margin-top: 50px;
+}
+.createaccount{
+    margin-top: 50px;
+}

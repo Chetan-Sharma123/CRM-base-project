@@ -1,0 +1,60 @@
+<%-include('../particals/head.ejs')%>
+<section id="blogheader">
+<div class="container">
+    <div class="row">
+        
+        <div class="col-md-12">
+            <a href="/addnewblog/mess"><button class="btn btn-success form-control mt-4 mb-3">ADD NEW BLOG</button></a>
+           <%if(message!=='mess'){%>
+            <div class="text-center">
+                <h6 class="alert alert-success"><%=message%></h6>
+            </div>
+           <%}%>
+            
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th >S.NO.</th>
+                        <th>Banner Title</th>
+                        <th>Banner Descriptions</th>
+                        <th>Create By</th>
+                        <th>Create Date</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <%blogAllData.forEach((val,key)=>{%>
+                        <tr>
+                            <td><%=key+1%></td>
+                            <td><%=val.title%></td>
+                            <td>  <p>
+                                <span class="dots"><%= val.desc.slice(0, 300) %>...</span>
+                                <span class="more" style="display:none;"><%= val.desc.slice(300, 1000) %></span>
+                              </p>
+                              <button onclick="toggleText('<%=key%>')" class="myBtn btn btn-light box">Read more</button>
+                            </td>
+                            <td><%=val.createBy%></td>
+                            <td><%=val.createDate%></td>
+                            <td><a href="/updateblog/<%=val.id%>"><button class="btn btn-success">UPDATE</button></a></td>
+                            <td><a href="/deleteblog/<%=val.id%>" onclick="return confirm('Please confirm whether to delete the items.')"><button class="btn btn-danger">DELETE</button></a></td>
+                            
+                        </tr>
+                 
+                    
+                    <%})%>
+                    
+                    <%if(blogAllData.length==0){%>
+                        <tr>
+                            <td colspan="8" ><h2 class="text-center">NO RECORD FOUND</h2></td>
+                        </tr>
+                    <%}%>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</section>
+<script src="../main.js"></script>
+</body>
+</html>

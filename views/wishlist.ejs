@@ -1,0 +1,32 @@
+<%-include('../particals/head.ejs')%>
+<section id="blogheader">
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div id="blogs">
+            <h2 class="text-center">Reading Blog</h2>
+            <% allData.forEach((val, key) => { %>
+                <div class="card">
+                  <div class="card-body">
+                    
+                    <h5 class="card-title"><%=val.title%></h5>
+                    
+                    <p>
+                      <span class="dots"><%= val.desc.slice(0, 300) %>...</span>
+                      <span class="more" style="display:none;"><%= val.desc.slice(300, 1000) %></span>
+                    </p>
+                    <button onclick="toggleText('<%=key%>')" class="myBtn btn btn-light box">Read more</button>
+                  </div>
+                  <!-- <%=message%> -->
+                  <h6><span  class="box ms-2">Create By :</span> <span id="email"><%=val.createBy%></span>
+                  </h6>
+                  
+                </div>
+                
+              <% }) %>
+            </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+</section>

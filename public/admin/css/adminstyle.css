@@ -1,0 +1,49 @@
+#header{
+    background-color: blueviolet;
+    padding: 5px;
+   
+}
+
+#header button{
+    padding: 10px;
+    float: right;
+}
+
+#header h5{
+    margin-top: 4px;
+    color: white;
+}
+#changepassword h4{
+    color: blue;
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+#deshboard ul {
+    list-style: none;
+    color: #173B45;
+   
+
+}
+#deshboard ul li{
+    margin-top: 15px;
+    font-weight: 900;
+    font-family: "Oswald", sans-serif;
+}
+
+#deshboard li span{
+    font-size: 30px;
+    color: #172a4e9c;
+}
+#deshboard .col-md-9{
+    text-align: center;
+}
+
+#deshboard h3{
+    margin-top: 50px;
+    text-align: center;
+    color: #173B45;
+    font-weight: bolder;
+}

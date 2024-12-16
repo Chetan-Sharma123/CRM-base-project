@@ -1,0 +1,40 @@
+<%-include('../particals/head.ejs')%>
+<section id="updateprofile">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+       <div class="col-md-4">
+        <h4>update Profile !!!</h4>
+        <%if(message !=='hh'){%>
+            <h6><%=message%></h6>
+        <%}%>
+        <h6>Account Status: <span><%=userProfileData.status%></span></h6>
+        <form action="" method="post" enctype="multipart/form-data">
+            <img src="../uploads/<%=userProfileData.img%>" alt="" width="150px"><div></div>
+            <label for=""> Update Image</label><input type="file" name="img" id="" class="form-control">
+            <label for="">First Name</label><input type="text" name="fname" id="" class="form-control" value="<%=userProfileData.firstname%>">
+            <label for="">Last Name</label><input type="text" name="lname" id="" class="form-control" value="<%=userProfileData.lastname%>">
+            <label for="">Email</label><input type="email" name="email" id=""class="form-control" value="<%=userProfileData.email%>" disabled >
+            <label for="" class="mt-3">Gender</label>
+            
+            <div class="form-check">
+                <input type="radio" name="gen" id=""  class="form-check-input me-2 " value="male"<%=userProfileData.gender=='male'?'checked':''%>><label for=""  class="form-check-label mt-1 me-4" >Male</label>
+            </div>
+            
+            <div class="form-check">
+                <input type="radio" name="gen" id=""  class="form-check-input me-2 " value="female" <%=userProfileData.gender=='female'?'checked':''%> ><label for=""  class="form-check-label mt-1">Female</label>
+                        </div>
+            
+            
+ 
+            <button type="submit" class="btn btn-success form-control mt-3">UPDATE</button>
+        </form>
+       </div>
+    </section>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+
+</section>
+</body>
+</html>
