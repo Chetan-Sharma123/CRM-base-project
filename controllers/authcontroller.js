@@ -52,8 +52,8 @@ exports.createaccountpost = async (req, res) => {
       port: 587,
       secure: false, // Use `true` for port 465, `false` for all other ports
       auth: {
-        user: "nodetest73@gmail.com",
-        pass: "ijgwkwkywrcevsvg",
+        user: "",
+        pass: "",
       },
     });
     await transporter.sendMail({
@@ -97,12 +97,12 @@ exports.forgetmailink = async (req, res) => {
       port: 587,
       secure: false, // Use `true` for port 465, `false` for all other ports
       auth: {
-        user: "nodetest73@gmail.com",
-        pass: "ijgwkwkywrcevsvg",
+        user: "",
+        pass: "",
       },
     });
     await transporter.sendMail({
-      from: "nodetest73@gmail.com", // sender address
+      from: "", // sender address
       to: email, // list of receivers
       subject: "FORGET PASSWORD", // Subject line
       text: "Click on below ink to genderate new  password", // plain text body
